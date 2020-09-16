@@ -7,7 +7,7 @@ import re
 import sys
 
 # Complete the miniMaxSum function below.
-def miniMaxSum(arr):
+def minMaxSum(arr):
     x = sum(arr)
     mini = x-(max(arr))
     maxi = x-(min(arr))
@@ -17,4 +17,4 @@ def miniMaxSum(arr):
 if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
 
-    miniMaxSum(arr)
+    minMaxSum(arr)
