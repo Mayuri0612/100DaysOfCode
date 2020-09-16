@@ -1,10 +1,10 @@
 #MEDIUM : The power sum
 
-def powerSum(X, N, cnum = 1):
+def powerSum(x, N, cnum = 1):
     p = pow(cnum, N)
-    if p > X:
+    if p > x:
         return 0
-    elif p == X:
+    elif p == x:
         return 1
     else:
-        return powerSum(X, N, cnum + 1) + powerSum(X - p, N, cnum+1)
+        return powerSum(x, N, cnum + 1) + powerSum(x - p, N, cnum+1)
